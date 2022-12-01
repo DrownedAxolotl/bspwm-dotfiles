@@ -1,0 +1,45 @@
+
+# Bspwm hotkeys
+
+super + Return
+	alacritty
+
+super + d
+	QT_QPA_PLATFORMTHEME=qt5ct rofi -show-icons -show drun -config /home/filip/.local/share/rofi-themes/nord-custom.rasi
+
+super + shift + q
+	bspc node -k
+
+super + q
+	bspc node -c
+
+super + s
+	bspc desktop -l next
+
+super + a
+	bspc node -s biggest.window.local
+
+super + {1-9}
+	bspc desktop -f {1-9}
+
+super + shift + {1-9}
+	bspc node -d {1-9}
+
+super + shift + x
+	rofi-power
+
+super + f
+	bspc node -t floating || bspc node -t tiled
+
+super + {_, shift +} w
+	firefox { , --private-window}
+
+super + e
+	thunar
+
+super + {Left, Right, Up, Down}
+	bspc node -f {west, east, north, south}
+
+super + y
+	flameshot gui
+

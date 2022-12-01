@@ -1,0 +1,207 @@
+/**
+ * rofi -dump-theme output.
+ * Rofi version: 1.7.5
+ **/
+* {
+    alternate-urgent-background: var(lightbg);
+    alternate-active-foreground: var(blue);
+    nord5:                       rgba ( 229, 233, 240, 100 % );
+    selected-active-background:  var(blue);
+    nord14:                      rgba ( 163, 190, 140, 100 % );
+    selected-urgent-foreground:  var(background);
+    nord0:                       rgba ( 46, 52, 64, 100 % );
+    nord2:                       rgba ( 67, 76, 94, 100 % );
+    nord6:                       rgba ( 236, 239, 244, 100 % );
+    accent-color:                var(nord8);
+    nord15:                      rgba ( 180, 142, 173, 100 % );
+    normal-foreground:           var(foreground);
+    nord1:                       rgba ( 59, 66, 82, 100 % );
+    padding:                     0px ;
+    text-color:                  var(nord4);
+    background:                  rgba ( 253, 246, 227, 100 % );
+    nord10:                      rgba ( 94, 129, 172, 100 % );
+    nord7:                       rgba ( 143, 188, 187, 100 % );
+    alternate-normal-foreground: var(foreground);
+    urgent-foreground:           var(red);
+    active-background:           var(background);
+    selected-normal-background:  var(lightfg);
+    blue:                        rgba ( 38, 139, 210, 100 % );
+    selected-urgent-background:  var(red);
+    selected-active-foreground:  var(background);
+    font:                        "IBM Plex Mono 12";
+    separatorcolor:              var(foreground);
+    nord8:                       rgba ( 136, 192, 208, 100 % );
+    lightfg:                     rgba ( 88, 104, 117, 100 % );
+    alternate-active-background: var(lightbg);
+    nord11:                      rgba ( 191, 97, 106, 100 % );
+    spacing:                     0px ;
+    nord3:                       rgba ( 76, 86, 106, 100 % );
+    nord12:                      rgba ( 208, 135, 112, 100 % );
+    alternate-urgent-foreground: var(red);
+    nord9:                       rgba ( 129, 161, 193, 100 % );
+    lightbg:                     rgba ( 238, 232, 213, 100 % );
+    red:                         rgba ( 220, 50, 47, 100 % );
+    background-color:            transparent;
+    normal-background:           var(background);
+    border-color:                var(foreground);
+    foreground:                  rgba ( 0, 43, 54, 100 % );
+    margin:                      0px ;
+    nord4:                       rgba ( 216, 222, 233, 100 % );
+    alternate-normal-background: var(lightbg);
+    urgent-background:           var(background);
+    selected-normal-foreground:  var(lightbg);
+    active-foreground:           var(blue);
+    nord13:                      rgba ( 235, 203, 139, 100 % );
+}
+element {
+    padding: 8px ;
+    cursor:  pointer;
+    spacing: 8px ;
+    border:  0;
+}
+element normal.normal {
+    background-color: var(normal-background);
+    text-color:       var(normal-foreground);
+}
+element normal.urgent {
+    background-color: var(urgent-background);
+    text-color:       var(nord13);
+}
+element normal.active {
+    background-color: var(active-background);
+    text-color:       var(accent-color);
+}
+element selected {
+    text-color: var(nord0);
+}
+element selected.normal {
+    background-color: var(accent-color);
+    text-color:       var(selected-normal-foreground);
+}
+element selected.urgent {
+    background-color: var(nord13);
+    text-color:       var(selected-urgent-foreground);
+}
+element selected.active {
+    background-color: var(nord8);
+    text-color:       var(selected-active-foreground);
+}
+element alternate.normal {
+    background-color: var(alternate-normal-background);
+    text-color:       var(alternate-normal-foreground);
+}
+element alternate.urgent {
+    background-color: var(alternate-urgent-background);
+    text-color:       var(alternate-urgent-foreground);
+}
+element alternate.active {
+    background-color: var(alternate-active-background);
+    text-color:       var(alternate-active-foreground);
+}
+element-text {
+    background-color: transparent;
+    cursor:           inherit;
+    highlight:        inherit;
+    vertical-align:   0.50;
+    text-color:       inherit;
+}
+element-icon {
+    background-color: transparent;
+    size:             0.7500em ;
+    cursor:           inherit;
+    vertical-align:   0.50;
+    text-color:       inherit;
+}
+window {
+    padding:          5;
+    background-color: var(nord0);
+    location:         center;
+    width:            480px ;
+    y-offset:         4294967136px ;
+    border-color:     var(accent-color);
+    border:           1px ;
+}
+mainbox {
+    padding: 0;
+    border:  0;
+}
+message {
+    padding:      1px ;
+    border-color: var(separatorcolor);
+    border:       2px dash 0px 0px ;
+}
+textbox {
+    text-color: var(foreground);
+}
+listview {
+    fixed-height: false;
+    padding:      2px 0px 0px ;
+    scrollbar:    true;
+    lines:        8;
+    border-color: var(separatorcolor);
+    columns:      1;
+    border:       2px dash 0px 0px ;
+    spacing:      2px ;
+}
+scrollbar {
+    width:        4px ;
+    padding:      0;
+    handle-width: 8px ;
+    border:       0;
+    handle-color: var(normal-foreground);
+}
+sidebar {
+    border-color: var(separatorcolor);
+    border:       2px dash 0px 0px ;
+}
+button {
+    cursor:     pointer;
+    spacing:    0;
+    text-color: var(normal-foreground);
+}
+button selected {
+    background-color: var(selected-normal-background);
+    text-color:       var(selected-normal-foreground);
+}
+num-filtered-rows {
+    expand:     false;
+    text-color: Gray;
+}
+num-rows {
+    expand:     false;
+    text-color: Gray;
+}
+textbox-num-sep {
+    expand:     false;
+    str:        "/";
+    text-color: Gray;
+}
+inputbar {
+    padding:    8px 12px ;
+    spacing:    12px ;
+    text-color: var(normal-foreground);
+    children:   [ "prompt","entry" ];
+}
+case-indicator {
+    spacing:    0;
+    text-color: var(normal-foreground);
+}
+entry {
+    text-color:        var(normal-foreground);
+    cursor:            text;
+    vertical-align:    0.50;
+    spacing:           0;
+    placeholder-color: Gray;
+    placeholder:       "Type to filter";
+}
+prompt {
+    vertical-align: 0.50;
+    spacing:        0;
+    text-color:     var(accent-color);
+}
+textbox-prompt-colon {
+    margin:     0px 0.3000em 0.0000em 0.0000em ;
+    expand:     false;
+    str:        ":";
+    text-color: inherit;
+}
